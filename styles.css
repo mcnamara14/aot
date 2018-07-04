@@ -1,16 +1,34 @@
 * {
     margin: 0px;
     font-family: 'Raleway', sans-serif;
+    color: #fff;
   }
   
   html, body {
     height: 100%;
   }
 
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    text-transform: uppercase;
+    line-height: 3rem;
+  }
+
+  h1 span {
+      font-weight: 100;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-weight: 300;
+  }
+
   .top {
-      height: 710px;
-      background: #272627;
-      padding: 20px 30px;
+    height: 550px;
+    background: #272627;
+    padding: 20px 30px;
+    position: relative;
   }
 
   header {
@@ -34,4 +52,54 @@
     margin-left: 40px;
     font-size: 0.9rem;
     font-weight: 500;
+  }
+
+  .slideshow {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 500px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .slideshow img {
+    width: 89%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .slideshow-left {
+    width: 30%;
+    margin-right: 10%;
+  }
+
+  .slideshow-right {
+    position: relative;
+    width: 60%;
+  }
+
+  .slideshow-links {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    bottom: 20px;
+  }
+
+  .slideshow-links a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .slideshow-link-1 {
+      color: #343434;
+  }
+
+  .slideshow-link-2, .slideshow-link-4 {
+      color: #646464;
+  }
+
+  .slideshow-link-3 {
+      color: #fff;
   }

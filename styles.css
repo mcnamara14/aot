@@ -6,6 +6,7 @@
   
   html, body {
     height: 100%;
+    background: #272727;
   }
 
   h1 {
@@ -26,9 +27,13 @@
 
   .top {
     height: 550px;
-    background: #272627;
     padding: 20px 30px;
     position: relative;
+    background: #272727; /* Old browsers */
+    background: -moz-linear-gradient(top, #272727 0%, #202020 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #272727 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #272727 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272727', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
   }
 
   header {
@@ -44,6 +49,7 @@
   nav {
     width: 30%;
     display: flex;
+    justify-content: space-between;
   }
 
   nav a {
@@ -59,7 +65,7 @@
     position: absolute;
     bottom: 0;
     height: 500px;
-    width: 100%;
+    width: calc(100% - 60px);
     justify-content: space-between;
   }
 
@@ -67,11 +73,11 @@
     width: 89%;
     position: absolute;
     bottom: 0;
+    right: 0;
   }
 
   .slideshow-left {
-    width: 30%;
-    margin-right: 10%;
+    width: 40%;
   }
 
   .slideshow-right {
@@ -102,4 +108,52 @@
 
   .slideshow-link-3 {
       color: #fff;
+  }
+
+  .bottom {
+    display: flex;
+    padding: 30px;
+    width: calc(100% - 60px);
+    justify-content: space-between;
+  }
+
+  .left {
+    width: calc(46% - 20px);
+  }
+
+  .right{
+    width: calc(52% - 0px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  }
+
+  .left img, .top-right img, .bottom-right, .bottom-right img {
+    width: 100%;
+  }
+
+  footer {
+    height: 60px;
+    padding: 0 30px;
+    background: #2c2c2c;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  footer ul {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  footer li {
+    list-style: none;
   }
